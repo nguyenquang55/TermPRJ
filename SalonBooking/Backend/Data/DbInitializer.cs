@@ -17,7 +17,7 @@ public static class DbInitializer
         {
             FullName = "Quản trị viên Salon",
             Phone = "0900000001",
-            PasswordHash = BCrypt.Net.BCrypt.HashPassword("Admin@123"),
+            PasswordHash = BCrypt.Net.BCrypt.HashPassword("Admin@123", 8),
             Role = "ADMIN",
             IsWorking = true
         };
@@ -26,7 +26,7 @@ public static class DbInitializer
         {
             FullName = "Trần Minh Tuấn",
             Phone = "0900000002",
-            PasswordHash = BCrypt.Net.BCrypt.HashPassword("Stylist@123"),
+            PasswordHash = BCrypt.Net.BCrypt.HashPassword("Stylist@123", 8),
             Role = "STYLIST",
             Specialty = "Chuyên Cắt & Uốn nam nữ",
             IsWorking = true
@@ -36,7 +36,7 @@ public static class DbInitializer
         {
             FullName = "Lê Thu Hà",
             Phone = "0900000003",
-            PasswordHash = BCrypt.Net.BCrypt.HashPassword("Stylist@123"),
+            PasswordHash = BCrypt.Net.BCrypt.HashPassword("Stylist@123", 8),
             Role = "STYLIST",
             Specialty = "Chuyên Nhuộm & Phục hồi tóc",
             IsWorking = true
@@ -46,7 +46,7 @@ public static class DbInitializer
         {
             FullName = "Phạm Hoàng Nam",
             Phone = "0900000004",
-            PasswordHash = BCrypt.Net.BCrypt.HashPassword("Stylist@123"),
+            PasswordHash = BCrypt.Net.BCrypt.HashPassword("Stylist@123", 8),
             Role = "STYLIST",
             Specialty = "Chuyên Cắt tạo kiểu",
             IsWorking = false // Đang tạm nghỉ (dùng test BR-01)
@@ -56,7 +56,7 @@ public static class DbInitializer
         {
             FullName = "Nguyễn Văn An",
             Phone = "0912345678",
-            PasswordHash = BCrypt.Net.BCrypt.HashPassword("Customer@123"),
+            PasswordHash = BCrypt.Net.BCrypt.HashPassword("Customer@123", 8),
             Role = "CUSTOMER",
             IsWorking = true
         };
@@ -65,7 +65,7 @@ public static class DbInitializer
         {
             FullName = "Lê Thị Bình",
             Phone = "0987654321",
-            PasswordHash = BCrypt.Net.BCrypt.HashPassword("Customer@123"),
+            PasswordHash = BCrypt.Net.BCrypt.HashPassword("Customer@123", 8),
             Role = "CUSTOMER",
             IsWorking = true
         };

@@ -4,17 +4,63 @@ using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
+using Npgsql;
 using SalonBooking.Api.Data;
+
+AppContext.SetSwitch("Npgsql.EnableLegacyTimestampBehavior", true);
 
 var builder = WebApplication.CreateBuilder(args);
 
-if (string.IsNullOrEmpty(Environment.GetEnvironmentVariable("ASPNETCORE_URLS")))
+var port = Environment.GetEnvironmentVariable("PORT");
+if (!string.IsNullOrWhiteSpace(port))
+{
+    builder.WebHost.UseUrls($"http://0.0.0.0:{port.Trim()}");
+}
+else if (string.IsNullOrEmpty(Environment.GetEnvironmentVariable("ASPNETCORE_URLS")))
 {
     builder.WebHost.UseUrls("http://localhost:3000");
 }
 
+static string ConvertPostgresUri(string rawUrl)
+{
+    var trimmed = rawUrl.Trim();
+    if (!trimmed.StartsWith("postgres://", StringComparison.OrdinalIgnoreCase) &&
+        !trimmed.StartsWith("postgresql://", StringComparison.OrdinalIgnoreCase))
+    {
+        return trimmed;
+    }
+
+    var uri = new Uri(trimmed);
+    var userInfo = uri.UserInfo.Split(':', 2);
+    var username = Uri.UnescapeDataString(userInfo[0]);
+    var password = userInfo.Length > 1 ? Uri.UnescapeDataString(userInfo[1]) : "";
+    var database = uri.AbsolutePath.Trim('/');
+
+    var csb = new NpgsqlConnectionStringBuilder
+    {
+        Host = uri.Host,
+        Port = uri.Port > 0 ? uri.Port : 5432,
+        Username = username,
+        Password = password,
+        Database = database,
+        SslMode = SslMode.Require
+    };
+
+    return csb.ConnectionString;
+}
+
+var dbUrl = Environment.GetEnvironmentVariable("DATABASE_URL");
 builder.Services.AddDbContext<SalonDbContext>(options =>
-    options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection") ?? "Data Source=salon.db"));
+{
+    if (!string.IsNullOrWhiteSpace(dbUrl))
+    {
+        options.UseNpgsql(ConvertPostgresUri(dbUrl));
+    }
+    else
+    {
+        options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection") ?? "Data Source=salon.db");
+    }
+});
 
 builder.Services.AddCors(options =>
 {
@@ -33,7 +79,9 @@ builder.Services.AddControllers()
             });
     });
 
-var jwtKey = builder.Configuration["Jwt:Key"] ?? "SalonBooking_SuperSecretKey_2026_VJU_TermProject!";
+var jwtKey = Environment.GetEnvironmentVariable("JWT_SECRET")
+             ?? builder.Configuration["Jwt:Key"]
+             ?? "SalonBooking_SuperSecretKey_2026_VJU_TermProject!";
 var keyBytes = Encoding.UTF8.GetBytes(jwtKey);
 
 builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme)
@@ -104,6 +152,9 @@ app.UseExceptionHandler(errApp =>
 app.UseCors();
 app.UseAuthentication();
 app.UseAuthorization();
+
+app.MapGet("/", () => Results.Ok(new { status = "ok", service = "SalonBooking.Api" }));
+app.MapGet("/api/health", () => Results.Ok(new { status = "ok" }));
 app.MapControllers();
 
 app.Run();

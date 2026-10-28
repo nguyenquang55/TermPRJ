@@ -1,0 +1,14 @@
+services:
+  - type: web
+    name: salon-booking-api
+    runtime: docker
+    rootDir: SalonBooking/Backend
+    plan: free
+    healthCheckPath: /api/health
+    envVars:
+      - key: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - key: TZ
+        value: Asia/Ho_Chi_Minh
+      - key: DATABASE_URL
+        sync: false

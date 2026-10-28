@@ -1,4 +1,10 @@
-const API_BASE = import.meta.env.VITE_API_BASE_URL || '/api';
+function resolveApiBase() {
+  const raw = (import.meta.env.VITE_API_BASE_URL || '').trim().replace(/\/+$/, '');
+  if (!raw) return '/api';
+  return raw.endsWith('/api') ? raw : `${raw}/api`;
+}
+
+const API_BASE = resolveApiBase();
 
 export function getAuth() {
   try {

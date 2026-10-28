@@ -1,0 +1,22 @@
+# .NET build & SQLite DB
+**/bin/
+**/obj/
+**/*.db
+**/*.db-shm
+**/*.db-wal
+**/.vs/
+
+# Node / Vite
+**/node_modules/
+**/dist/
+.env
+.env.local
+.env.*.local
+
+# Office temporary lock files
+~$*
+**/~$*
+
+# Bảo mật: Không đẩy tài liệu Bug Manifest mật của Chủ hệ thống lên GitHub
+Documnet/*Loi_Cai_san*
+Documnet/*Bug_Manifest*

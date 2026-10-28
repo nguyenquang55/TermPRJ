@@ -72,7 +72,7 @@ public class AuthController(SalonDbContext db, IConfiguration config) : Controll
         {
             FullName = fullName,
             Phone = phone,
-            PasswordHash = BCrypt.Net.BCrypt.HashPassword(password),
+            PasswordHash = BCrypt.Net.BCrypt.HashPassword(password, 8),
             Role = "CUSTOMER",
             IsWorking = true
         };
