@@ -1,0 +1,154 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\M\u00F4n Test\\TermPRJ\\SalonBooking\\Backend\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{8AA443D9-3CE6-925A-CF41-449B5E20A301}|SalonBooking.Api.csproj|d:\\m\u00F4n test\\termprj\\salonbooking\\backend\\controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AA443D9-3CE6-925A-CF41-449B5E20A301}|SalonBooking.Api.csproj|solutionrelative:controllers\\authcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AA443D9-3CE6-925A-CF41-449B5E20A301}|SalonBooking.Api.csproj|d:\\m\u00F4n test\\termprj\\salonbooking\\backend\\controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AA443D9-3CE6-925A-CF41-449B5E20A301}|SalonBooking.Api.csproj|solutionrelative:controllers\\bookingscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AA443D9-3CE6-925A-CF41-449B5E20A301}|SalonBooking.Api.csproj|d:\\m\u00F4n test\\termprj\\salonbooking\\backend\\controllers\\servicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AA443D9-3CE6-925A-CF41-449B5E20A301}|SalonBooking.Api.csproj|solutionrelative:controllers\\servicescontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AA443D9-3CE6-925A-CF41-449B5E20A301}|SalonBooking.Api.csproj|d:\\m\u00F4n test\\termprj\\salonbooking\\backend\\controllers\\stylistsandslotscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AA443D9-3CE6-925A-CF41-449B5E20A301}|SalonBooking.Api.csproj|solutionrelative:controllers\\stylistsandslotscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AA443D9-3CE6-925A-CF41-449B5E20A301}|SalonBooking.Api.csproj|d:\\m\u00F4n test\\termprj\\salonbooking\\backend\\models\\entities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AA443D9-3CE6-925A-CF41-449B5E20A301}|SalonBooking.Api.csproj|solutionrelative:models\\entities.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8AA443D9-3CE6-925A-CF41-449B5E20A301}|SalonBooking.Api.csproj|d:\\m\u00F4n test\\termprj\\salonbooking\\backend\\models\\dtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8AA443D9-3CE6-925A-CF41-449B5E20A301}|SalonBooking.Api.csproj|solutionrelative:models\\dtos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 13,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{e8b06f52-6d01-11d2-aa7d-00c04f990343}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{eefa5220-e298-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{269a02dc-6af8-11d3-bdc4-00c04f688e50}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{40ea2e6b-2121-4bb8-a43e-c83c04b51041}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "BookingsController.cs",
+              "DocumentMoniker": "D:\\M\u00F4n Test\\TermPRJ\\SalonBooking\\Backend\\Controllers\\BookingsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\BookingsController.cs",
+              "ToolTip": "D:\\M\u00F4n Test\\TermPRJ\\SalonBooking\\Backend\\Controllers\\BookingsController.cs",
+              "RelativeToolTip": "Controllers\\BookingsController.cs",
+              "ViewState": "AgIAAGgBAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-28T02:34:14.796Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "ServicesController.cs",
+              "DocumentMoniker": "D:\\M\u00F4n Test\\TermPRJ\\SalonBooking\\Backend\\Controllers\\ServicesController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ServicesController.cs",
+              "ToolTip": "D:\\M\u00F4n Test\\TermPRJ\\SalonBooking\\Backend\\Controllers\\ServicesController.cs",
+              "RelativeToolTip": "Controllers\\ServicesController.cs",
+              "ViewState": "AgIAAH4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-28T02:34:10.392Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "StylistsAndSlotsController.cs",
+              "DocumentMoniker": "D:\\M\u00F4n Test\\TermPRJ\\SalonBooking\\Backend\\Controllers\\StylistsAndSlotsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\StylistsAndSlotsController.cs",
+              "ToolTip": "D:\\M\u00F4n Test\\TermPRJ\\SalonBooking\\Backend\\Controllers\\StylistsAndSlotsController.cs",
+              "RelativeToolTip": "Controllers\\StylistsAndSlotsController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-28T02:33:59.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Entities.cs",
+              "DocumentMoniker": "D:\\M\u00F4n Test\\TermPRJ\\SalonBooking\\Backend\\Models\\Entities.cs",
+              "RelativeDocumentMoniker": "Models\\Entities.cs",
+              "ToolTip": "D:\\M\u00F4n Test\\TermPRJ\\SalonBooking\\Backend\\Models\\Entities.cs",
+              "RelativeToolTip": "Models\\Entities.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-28T02:33:56.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "Dtos.cs",
+              "DocumentMoniker": "D:\\M\u00F4n Test\\TermPRJ\\SalonBooking\\Backend\\Models\\Dtos.cs",
+              "RelativeDocumentMoniker": "Models\\Dtos.cs",
+              "ToolTip": "D:\\M\u00F4n Test\\TermPRJ\\SalonBooking\\Backend\\Models\\Dtos.cs",
+              "RelativeToolTip": "Models\\Dtos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-28T02:33:54.42Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AuthController.cs",
+              "DocumentMoniker": "D:\\M\u00F4n Test\\TermPRJ\\SalonBooking\\Backend\\Controllers\\AuthController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AuthController.cs",
+              "ToolTip": "D:\\M\u00F4n Test\\TermPRJ\\SalonBooking\\Backend\\Controllers\\AuthController.cs",
+              "RelativeToolTip": "Controllers\\AuthController.cs",
+              "ViewState": "AgIAAJUAAAAAAAAAAAAowAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-10-28T02:33:42.559Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
